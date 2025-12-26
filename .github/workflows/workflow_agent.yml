@@ -27,7 +27,7 @@ jobs:
             exit 0
           fi
 
-          mkdir -p agent_data
+          mkdirr -p agent_data
           echo "Workflow triggered at $(date)" > agent_data/info.txt
 
       - name: Commit and push the file
